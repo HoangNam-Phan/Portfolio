@@ -1,10 +1,18 @@
 import React from 'react';
-import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar/Navbar.js';
+import Intro from './components/Intro/Intro.js';
+import './App.css';
+
 
 const App = () => {
     return (
         <div>
-            <h1>herro</h1>
+            <Navbar />
+            <Intro />
+            {/* <Me />
+            <Skills />
+            <Footer /> */}
         </div>
     )
 }

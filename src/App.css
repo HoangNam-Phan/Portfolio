@@ -1,0 +1,26 @@
+/* NAVBAR STYLING */
+
+.navbar-brand {
+    color: black;
+}
+
+.nav-link{
+    color: black;
+    font-size: 20px;
+}
+
+/* INTRO STYLING */
+
+.introWrapper {
+    height: 100vh;
+    border: 5px red solid
+}
+
+.introText {
+    border: 2px solid blue;
+    margin-top: 30%;
+}
+
+.heading {
+    border-bottom: 2px solid black;
+}
