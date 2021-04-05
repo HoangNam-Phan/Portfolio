@@ -1,5 +1,15 @@
+/* GLOBAL */
+html,
+body {
+    height: 100%;
+}
+
 /* NAVBAR STYLING */
 
+.navbar{
+    display: block !important;
+    border: 1px solid black;
+}
 .navbar-brand {
     color: black;
 }
@@ -13,12 +23,11 @@
 
 .introWrapper {
     height: 100vh;
-    border: 5px red solid
+    border: 5px red solid;
 }
 
 .introText {
     border: 2px solid blue;
-    margin-top: 30%;
 }
 
 .heading {

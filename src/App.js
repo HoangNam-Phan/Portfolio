@@ -1,14 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar/Navbar.js';
 import Intro from './components/Intro/Intro.js';
+import Navbar from './components/Navbar/Navbar'
 import './App.css';
 
 
 const App = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Intro />
             {/* <Me />
             <Skills />
