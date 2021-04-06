@@ -15,10 +15,10 @@ import Skills from './components/Skills/Skills'
 const App = () => {
     return (
         <div>
-            <Navbar />
             <Intro />
             <Me />
             <Skills />
+            {/* <Whyme /> */}
             {/* <Footer /> */}
         </div>
     )
