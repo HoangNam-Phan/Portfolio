@@ -4,9 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // COMPONENTS
 import Intro from './components/Intro/Intro.js';
-import Navbar from './components/Navbar/Navbar';
 import Me from './components/Me/Me';
 import Skills from './components/Skills/Skills';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+
 
 // CSS
 import './App.css';
@@ -18,8 +20,9 @@ const App = () => {
             <Intro />
             <Me />
             <Skills />
-            {/* <Whyme /> */}
-            {/* <Footer /> */}
+            <About />
+            {/* <Contact /> */}
+            <Footer />
         </div>
     )
 }

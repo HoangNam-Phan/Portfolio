@@ -1,6 +1,16 @@
+/* __________________________________________________________________________________ */
 /* GLOBAL */
+/* __________________________________________________________________________________ */
 
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+body {
+    font-family: 'Kiwi Maru', serif;
+}
+
+
+/* __________________________________________________________________________________ */
 /* NAVBAR STYLING */
+/* _________________________________________________________________________________ */
 
 .navbar-brand {
     color: black;
@@ -11,7 +21,10 @@
     font-size: 20px;
 }
 
+
+/* __________________________________________________________________________________ */
 /* INTRO STYLING */
+/* __________________________________________________________________________________ */
 
 .introWrapper {
     height: 100vh;
@@ -32,11 +45,14 @@
     text-align: center;
 }
 
+
+/* __________________________________________________________________________________ */
 /* ME STYLING */
+/* __________________________________________________________________________________ */
 
 .me {
-    height: 700px;
-    background-color: #adb5bd;
+    height: 43.75rem;
+    background-color: #6c757d;
 }
 
 .hello {
@@ -48,24 +64,33 @@
     height: 300px;
 }
 
+.dividerTwo {
+    padding-top: 10px;
+}
+
+
+/* __________________________________________________________________________________ */
 /* SKILLS STYLING */
+/* __________________________________________________________________________________ */
 
 .skills {
-    height: 700px;
+    color: white;
+    height: 43.75em;
     background-color: #ced4da;
+    background-image: url('https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1348&q=80');
+    background-size: cover;
 }
 
-.skillsHeading {
-    margin-bottom: 100px;
-    font-size: 35px;
-    text-decoration: underline ;
+.divider {
+    margin-bottom: 30px;
+    margin-left: 15px;
 }
 
-.skillCon {
+.skillsCon {
     width: 400px;
     height: 200px;
     padding-top: 20px;
-    padding-left: 30px;;
+    padding-left: 30px;
 }
 
 .boxRow {
@@ -73,9 +98,50 @@
 }
 
 #box1, #box3 {
-    border-right: 2px solid #adb5bd;
+    border-right: 1px solid white;
 }
 
-#box3, #box4{
-    border-top: 2px solid #adb5bd;
+#box3, #box4 {
+    border-top: 1px solid white;
+}
+
+
+/* __________________________________________________________________________________ */
+/* ABOUT STYLING */
+/* __________________________________________________________________________________ */
+
+.about {
+    height: 600px;
+}
+
+.aboutHeading {
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #e9ecef;
+    font-size: 14px;
+}
+
+.btnCon {
+    background-color: #e9ecef;
+    border-radius: 14px;
+    height: 250px;
+    margin-bottom: 80px;
+}
+
+.aboutText {
+    border-left: 1px solid #adb5bd;
+}
+
+
+/* __________________________________________________________________________________ */
+/* FOOTER STYLING */
+/* __________________________________________________________________________________ */
+
+.footer {
+    height: 200px;
+    background-color: #212529;
+    color: white;
 }
