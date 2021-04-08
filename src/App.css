@@ -1,5 +1,7 @@
 /* __________________________________________________________________________________ */
+
 /* GLOBAL */
+
 /* __________________________________________________________________________________ */
 
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
@@ -7,10 +9,15 @@ body {
     font-family: 'Kiwi Maru', serif;
 }
 
-
 /* __________________________________________________________________________________ */
+
 /* NAVBAR STYLING */
+
 /* _________________________________________________________________________________ */
+
+/* .navbar {
+    background-color: white;
+} */
 
 .navbar-brand {
     color: black;
@@ -21,9 +28,10 @@ body {
     font-size: 20px;
 }
 
-
 /* __________________________________________________________________________________ */
+
 /* INTRO STYLING */
+
 /* __________________________________________________________________________________ */
 
 .introWrapper {
@@ -45,14 +53,19 @@ body {
     text-align: center;
 }
 
-
 /* __________________________________________________________________________________ */
+
 /* ME STYLING */
+
 /* __________________________________________________________________________________ */
 
 .me {
     height: 43.75rem;
     background-color: #6c757d;
+}
+
+.meText {
+    padding-left: 70px;
 }
 
 .hello {
@@ -68,17 +81,58 @@ body {
     padding-top: 10px;
 }
 
+@media (max-width: 991.98px) {
+    .me {
+        height: 50rem;
+        background-color: #6c757d;
+    }
+}
+
+@media (max-width: 850px) {
+    .me {
+        height: 57rem;
+        background-color: #6c757d;
+    }
+}
+
+@media (max-width: 670px) {
+    .me {
+        height: 60rem;
+        background-color: #6c757d;
+    }
+}
+
+@media (max-width: 603px) {
+    .me {
+        height: 65rem;
+        background-color: #6c757d;
+    }
+}
+
+@media (max-width: 545px) {
+    .me {
+        height: 70rem;
+        background-color: #6c757d;
+    }
+}
 
 /* __________________________________________________________________________________ */
+
 /* SKILLS STYLING */
+
 /* __________________________________________________________________________________ */
 
 .skills {
     color: white;
-    height: 43.75em;
-    background-color: #ced4da;
-    background-image: url('https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1348&q=80');
+    height: 45em;
+    background-image: url('https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1048&q=80');
     background-size: cover;
+}
+
+.backgroundImg {
+    z-index: -1;
+    position: absolute;
+    filter: blur(1px);
 }
 
 .divider {
@@ -105,9 +159,32 @@ body {
     border-top: 1px solid white;
 }
 
+h4 span {
+    margin-right: 10px;
+    font-size: 35px;
+}
+
+@media (max-width: 767.98px) {
+    .skills {
+        height: 58em;
+    }
+    #box1, #box3 {
+        border-right: none;
+    }
+    
+    #box3, #box4 {
+        border-top: none;
+    }
+    #box1, #box2, #box3 {
+        border-bottom: 1px solid white;
+    }
+}
+
 
 /* __________________________________________________________________________________ */
+
 /* ABOUT STYLING */
+
 /* __________________________________________________________________________________ */
 
 .about {
@@ -119,9 +196,15 @@ body {
     margin-bottom: 30px;
 }
 
-.btn {
+.button {
     background-color: #e9ecef;
     font-size: 14px;
+    width: inherit;
+    border: none;
+}
+
+.button:hover {
+    background-color: #dee2e6;
 }
 
 .btnCon {
@@ -135,9 +218,22 @@ body {
     border-left: 1px solid #adb5bd;
 }
 
+.btnClicked {
+    background-color: #ced4da;
+    font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+    .button {
+        font-size: 10px;
+
+    }
+}
 
 /* __________________________________________________________________________________ */
+
 /* FOOTER STYLING */
+
 /* __________________________________________________________________________________ */
 
 .footer {
