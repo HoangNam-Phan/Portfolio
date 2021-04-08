@@ -15,18 +15,40 @@ body {
 
 /* _________________________________________________________________________________ */
 
-/* .navbar {
+.navbar {
     background-color: white;
-} */
-
-.navbar-brand {
-    color: black;
 }
 
-.nav-link {
-    color: black;
-    font-size: 20px;
+.navBtn {
+    font-size: 23px;
+    background-color: white;
+    border: none;
 }
+
+.navBtn:hover {
+    font-size: 24px;
+    background-color: #adb5bd;
+    transition: font-size 0.1s;
+}
+
+.navbar-brand:hover {
+    font-size: 21px;
+    color: #adb5bd !important;
+    transition: 0.2s;
+}
+
+@media (max-width: 767.98px){
+    .navLinks a {
+        display: none; 
+    }
+}
+
+@media (min-width: 767.98px){
+    .navBtn {
+        display: none; 
+    }
+}
+
 
 /* __________________________________________________________________________________ */
 
@@ -44,7 +66,7 @@ body {
 }
 
 .introText {
-    margin-bottom: 12.5em;
+    margin-bottom: 7em;
 }
 
 .heading {

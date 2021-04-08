@@ -1,28 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+const bars = <FontAwesomeIcon icon={faBars} />
+
+const NavToggle = () => {
+  return (
+    <>
+      <a className='navbar-brand' href="#">Home</a>
+      <a className='navbar-brand' href="#intro">Intro</a>
+      <a className='navbar-brand' href="#skills">Skills</a>
+      <a className='navbar-brand' href="#about">Über mich</a>
+    </>
+  )
+}
 
 const Navbar = () => {
+
+  const [toggle, setToggle] = useState(false);
+
   return (
-    <nav className="navbar navbar-light navbar-expand-md fixed-top">
+    <nav className="navbar navbar-light fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a className='navbar-brand' href="#intro">Intro</a>
-            </li>
-            <li class="nav-item">
-              <a className='navbar-brand' href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a className='navbar-brand' href="#about">Über mich</a>
-            </li>
-          </ul>
+        <h3>Portfolio</h3>
+        <div className="navLinks">
+          <NavToggle />
+          <button className='navBtn' onClick={() => setToggle(!toggle)}>{bars}</button>
         </div>
       </div>
-    </nav>
+      <div className='d-flex flex-column pl-3'>
+        {toggle && <NavToggle />}
+      </div >
+    </nav >
   )
 }
 
