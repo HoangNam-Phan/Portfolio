@@ -9,6 +9,11 @@ body {
     font-family: 'Kiwi Maru', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* __________________________________________________________________________________ */
 
 /* NAVBAR STYLING */
@@ -37,15 +42,15 @@ body {
     transition: 0.2s;
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 767.98px) {
     .navLinks a {
-        display: none; 
+        display: none;
     }
 }
 
-@media (min-width: 767.98px){
+@media (min-width: 767.98px) {
     .navBtn {
-        display: none; 
+        display: none;
     }
 }
 
@@ -58,6 +63,8 @@ body {
 
 .introWrapper {
     height: 100vh;
+    /* background-image: url('https://images.unsplash.com/photo-1557109925-3618ccfc2013?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    background-size:auto; */
 }
 
 .introWrapper2 {
@@ -74,6 +81,7 @@ body {
     width: 400px;
     text-align: center;
 }
+
 
 /* __________________________________________________________________________________ */
 
@@ -138,6 +146,7 @@ body {
     }
 }
 
+
 /* __________________________________________________________________________________ */
 
 /* SKILLS STYLING */
@@ -193,7 +202,6 @@ h4 span {
     #box1, #box3 {
         border-right: none;
     }
-    
     #box3, #box4 {
         border-top: none;
     }
@@ -248,8 +256,45 @@ h4 span {
 @media (max-width: 767.98px) {
     .button {
         font-size: 10px;
-
     }
+}
+
+@media (max-width: 767.98px) {
+    .btnCon {
+        height: 200px;
+    }
+}
+
+
+/* __________________________________________________________________________________ */
+
+/* CONTACT STYLING */
+
+/* __________________________________________________________________________________ */
+
+.contact {
+    color: white;
+    height: 700px;
+    background-color: #6c757d;
+}
+
+.contactHeading {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.inputField {
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.submitBtn {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 /* __________________________________________________________________________________ */
