@@ -9,7 +9,6 @@ import Skills from './components/Skills/Skills';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import ReactCSSTransitionGroup from 'react-transition-group';
 
 
 // CSS
