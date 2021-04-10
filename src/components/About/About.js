@@ -19,7 +19,7 @@ const About = () => {
     return (
         <div id='about' className='about d-flex flex-column justify-content-center'>
             <div className='aboutHeading'>
-                <h3><b>Was mich ausmacht</b></h3>
+                <h2><b>Was mich ausmacht</b></h2>
                 <span>_________________________</span>
             </div>
             <div className=' container'>

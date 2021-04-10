@@ -4,15 +4,16 @@
 
 /* __________________________________________________________________________________ */
 
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Source+Serif+Pro&family=Work+Sans:ital,wght@0,400;1,300&display=swap');
 body {
-    font-family: 'Kiwi Maru', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
 
 /* __________________________________________________________________________________ */
 
@@ -54,7 +55,6 @@ html {
     }
 }
 
-
 /* __________________________________________________________________________________ */
 
 /* INTRO STYLING */
@@ -63,8 +63,6 @@ html {
 
 .introWrapper {
     height: 100vh;
-    /* background-image: url('https://images.unsplash.com/photo-1557109925-3618ccfc2013?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
-    background-size:auto; */
 }
 
 .introWrapper2 {
@@ -73,15 +71,87 @@ html {
 }
 
 .introText {
-    margin-bottom: 7em;
+    margin-top: 300px;
+    margin-left: 30px;
+    animation-name: blendIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blendIn {
+    from {
+        opacity: 0;
+        margin-top: 400px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 300px;
+    }
 }
 
 .heading {
     border-bottom: 2px solid black;
-    width: 400px;
+    width: 350px;
     text-align: center;
 }
 
+.bgVideo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 1550px) {
+    .heading {
+        font-size: 35px;
+        width: 250px;
+        margin-top: -50px;
+        margin-left: -10px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .heading {
+        font-size: 30px;
+        width: 200px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .heading {
+        font-size: 25px;
+        width: 170px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 20px;
+        width: 130px;
+        margin-top: -120px;
+        margin-left: -15px;
+    }
+    .title {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading {
+        font-size: 15px;
+        width: 100px;
+        margin-top: -115px;
+        margin-left: -20px;
+    }
+    .title {
+        font-size: 10px;
+        margin-right: 10px;
+        margin-top: -10px;
+    }
+}
 
 /* __________________________________________________________________________________ */
 
@@ -89,13 +159,40 @@ html {
 
 /* __________________________________________________________________________________ */
 
+@keyframes wave {
+    from {
+        transform: rotate(40deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+.hand {
+    font-size: 120%;
+    margin-left: 10px;
+    animation-name: wave;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
 .me {
     height: 43.75rem;
     background-color: #6c757d;
 }
 
+.me:hover {
+    background-color: #919ba5;
+    transition: 0.5s;
+}
+
 .meText {
     padding-left: 70px;
+}
+
+.meText p{
+    font-size: 20px;
 }
 
 .hello {
@@ -146,7 +243,6 @@ html {
     }
 }
 
-
 /* __________________________________________________________________________________ */
 
 /* SKILLS STYLING */
@@ -155,7 +251,7 @@ html {
 
 .skills {
     color: white;
-    height: 45em;
+    height: 50em;
     background-image: url('https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1048&q=80');
     background-size: cover;
 }
@@ -176,6 +272,15 @@ html {
     height: 200px;
     padding-top: 20px;
     padding-left: 30px;
+}
+
+.skillsCon li {
+    font-size: 19px;
+}
+
+.skillsCon:hover {
+    background-color: #9ea3a8;
+    transition: 0.2s;
 }
 
 .boxRow {
@@ -210,7 +315,6 @@ h4 span {
     }
 }
 
-
 /* __________________________________________________________________________________ */
 
 /* ABOUT STYLING */
@@ -218,16 +322,21 @@ h4 span {
 /* __________________________________________________________________________________ */
 
 .about {
-    height: 600px;
+    height: 800px;
+}
+
+.about:hover {
+    background-color: #dee2e6;
+    transition: 0.2s;
 }
 
 .aboutHeading {
     margin-left: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .button {
-    background-color: #e9ecef;
+    background-color: #b6babd;
     font-size: 14px;
     width: inherit;
     border: none;
@@ -238,14 +347,18 @@ h4 span {
 }
 
 .btnCon {
-    background-color: #e9ecef;
+    background-color: #b6babd;
     border-radius: 14px;
-    height: 250px;
+    height: 300px;
     margin-bottom: 80px;
 }
 
 .aboutText {
-    border-left: 1px solid #adb5bd;
+    border-left: 2px solid black;
+}
+
+.aboutText p {
+    font-size: 20px;
 }
 
 .btnClicked {
@@ -265,7 +378,6 @@ h4 span {
     }
 }
 
-
 /* __________________________________________________________________________________ */
 
 /* CONTACT STYLING */
@@ -273,28 +385,53 @@ h4 span {
 /* __________________________________________________________________________________ */
 
 .contact {
-    color: white;
-    height: 700px;
+    color: black;
+    height: 1000px;
     background-color: #6c757d;
+    background-image: url('https://images.unsplash.com/photo-1580637250481-b78db3e6f84b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80');
+    background-size: cover;
 }
 
 .contactHeading {
-    margin-left: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
+}
+
+.formCon {
+    width: 600px;
 }
 
 .inputField {
     margin-bottom: 25px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
+}
+
+.formLabels {
+    margin-top: 15px;
+}
+
+.inputCon:hover {
+    background-color: #d6d6da;
 }
 
 .submitBtn {
-    color: white;
+    color: black;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
+}
+
+.submitBtn:hover {
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+@media (max-width: 600px) {
+    .formCon {
+        width: 400px;
+    }
 }
 
 /* __________________________________________________________________________________ */
