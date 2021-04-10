@@ -13,16 +13,8 @@ body {
 
 html {
     scroll-behavior: smooth;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
-body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
 
 .fade-in-section {
     opacity: 0;
@@ -49,30 +41,30 @@ body {
 }
 
 .navBtn {
-    font-size: 23px;
+    font-size: 1.438em;
     background-color: white;
     border: none;
 }
 
 .navBtn:hover {
-    font-size: 24px;
+    font-size: 1.5em;
     background-color: #adb5bd;
     transition: font-size 0.1s;
 }
 
 .navbar-brand:hover {
-    font-size: 21px;
+    font-size: 1.313em;
     color: #adb5bd !important;
     transition: 0.2s;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 47.999em) {
     .navLinks a {
         display: none;
     }
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 47.999em) {
     .navBtn {
         display: none;
     }
@@ -94,8 +86,8 @@ body {
 }
 
 .introText {
-    margin-top: 300px;
-    margin-left: 30px;
+    margin-top: 18.75em;
+    margin-left: 1.875em;
     animation-name: blendIn;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -104,17 +96,17 @@ body {
 @keyframes blendIn {
     from {
         opacity: 0;
-        margin-top: 400px;
+        margin-top: 25em;
     }
     to {
         opacity: 1;
-        margin-top: 300px;
+        margin-top: 18.75em;
     }
 }
 
 .heading {
     border-bottom: 2px solid black;
-    width: 350px;
+    width: 8em;
     text-align: center;
 }
 
@@ -125,54 +117,54 @@ body {
     z-index: -1;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 96.875em) {
     .heading {
-        font-size: 35px;
-        width: 250px;
-        margin-top: -50px;
-        margin-left: -10px;
+        font-size: 2.188em;
+        width: 7em;
+        margin-top: -2.125em;
+        margin-left: -0.625em;
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 73.75em) {
     .heading {
-        font-size: 30px;
-        width: 200px;
-        margin-top: -100px;
+        font-size: 1.875em;
+        width: 6em;
+        margin-top: -3em;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25em) {
     .heading {
-        font-size: 25px;
-        width: 170px;
-        margin-top: -100px;
+        font-size: 1.563em;
+        width: 5em;
+        margin-top: -4em;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .heading {
-        font-size: 20px;
-        width: 130px;
-        margin-top: -120px;
-        margin-left: -15px;
+        font-size: 1.25em;
+        width: 5.5em;
+        margin-top: -5.5em;
+        margin-left: -0.38em;
     }
     .title {
-        font-size: 11px;
+        font-size: 0.688em;
     }
 }
 
 @media (max-width: 600px) {
     .heading {
-        font-size: 12px;
-        width: 80px;
-        margin-top: -120px;
-        margin-left: -20px;
+        font-size: 0.75em;
+        width: 6em;
+        margin-top: -9.5em;
+        margin-left: -1.6em;
     }
     .title {
-        font-size: 8px;
-        margin-right: 15px;
-        margin-top: -8px;
+        font-size: 0.5em;
+        margin-right: 1.7em;
+        margin-top: -0.5em;
     }
 }
 
@@ -201,7 +193,7 @@ body {
 }
 
 .me {
-    height: 43.75rem;
+    height: 43.75em;
     background-color: #6c757d;
 }
 
@@ -211,11 +203,11 @@ body {
 }
 
 .meText {
-    padding-left: 70px;
+    padding-left: 4.375em;
 }
 
 .meText p {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .hello {
@@ -223,45 +215,45 @@ body {
 }
 
 .pPicture {
-    width: 300px;
-    height: 300px;
+    width: 18.75em;
+    height: 18.75em;
 }
 
 .dividerTwo {
-    padding-top: 10px;
+    padding-top: 0.625em;
 }
 
 @media (max-width: 991.98px) {
     .me {
-        height: 50rem;
+        height: 50em;
         background-color: #6c757d;
     }
 }
 
 @media (max-width: 850px) {
     .me {
-        height: 57rem;
+        height: 57em;
         background-color: #6c757d;
     }
 }
 
 @media (max-width: 670px) {
     .me {
-        height: 60rem;
+        height: 60em;
         background-color: #6c757d;
     }
 }
 
 @media (max-width: 603px) {
     .me {
-        height: 65rem;
+        height: 65em;
         background-color: #6c757d;
     }
 }
 
 @media (max-width: 545px) {
     .me {
-        height: 70rem;
+        height: 70em;
         background-color: #6c757d;
     }
 }
@@ -286,19 +278,19 @@ body {
 }
 
 .divider {
-    margin-bottom: 30px;
-    margin-left: 15px;
+    margin-bottom: 1.875em;
+    margin-left: 0.938em;
 }
 
 .skillsCon {
-    width: 400px;
-    height: 200px;
-    padding-top: 20px;
-    padding-left: 30px;
+    width: 25em;
+    height: 12.5em;
+    padding-top: 1.25em;
+    padding-left: 1.875em;
 }
 
 .skillsCon li {
-    font-size: 19px;
+    font-size: 1.188em;
 }
 
 .skillsCon:hover {
@@ -307,7 +299,7 @@ body {
 }
 
 .boxRow {
-    margin: 0px 50px;
+    margin: 0px 3.125em;
 }
 
 #box1, #box3 {
@@ -319,8 +311,8 @@ body {
 }
 
 h4 span {
-    margin-right: 10px;
-    font-size: 35px;
+    margin-right: 0.625em;
+    font-size: 2.188em;
 }
 
 @media (max-width: 767.98px) {
@@ -345,7 +337,7 @@ h4 span {
 /* __________________________________________________________________________________ */
 
 .about {
-    height: 800px;
+    height: 50em;
 }
 
 .about:hover {
@@ -354,13 +346,13 @@ h4 span {
 }
 
 .aboutHeading {
-    margin-left: 100px;
-    margin-bottom: 100px;
+    margin-left: 6.25em;
+    margin-bottom: 6.25em;
 }
 
 .button {
     background-color: #b6babd;
-    font-size: 14px;
+    font-size: 0.875em;
     width: inherit;
     border: none;
 }
@@ -372,8 +364,8 @@ h4 span {
 .btnCon {
     background-color: #b6babd;
     border-radius: 14px;
-    height: 300px;
-    margin-bottom: 80px;
+    height: 18.75em;
+    margin-bottom: 5em;
 }
 
 .aboutText {
@@ -381,7 +373,7 @@ h4 span {
 }
 
 .aboutText p {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .btnClicked {
@@ -391,13 +383,13 @@ h4 span {
 
 @media (max-width: 767.98px) {
     .button {
-        font-size: 10px;
+        font-size: 0.5em;
     }
 }
 
 @media (max-width: 767.98px) {
     .btnCon {
-        height: 200px;
+        height: 12.5em;
     }
 }
 
@@ -409,29 +401,29 @@ h4 span {
 
 .contact {
     color: black;
-    height: 1000px;
+    height: 62.5em;
     background-color: #6c757d;
     background-image: url('https://images.unsplash.com/photo-1580637250481-b78db3e6f84b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80');
     background-size: cover;
 }
 
 .contactHeading {
-    margin-bottom: 120px;
+    margin-bottom: 7.5em;
 }
 
 .formCon {
-    width: 600px;
+    width: 37.5em;
 }
 
 .inputField {
-    margin-bottom: 25px;
+    margin-bottom: 1.563em;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
 }
 
 .formLabels {
-    margin-top: 15px;
+    margin-top: 0.938em;
 }
 
 .inputCon:hover {
@@ -453,7 +445,7 @@ h4 span {
 
 @media (max-width: 600px) {
     .formCon {
-        width: 400px;
+        width: 25em;
     }
 }
 
@@ -464,7 +456,7 @@ h4 span {
 /* __________________________________________________________________________________ */
 
 .footer {
-    height: 200px;
+    height: 12.5em;
     background-color: #212529;
     color: white;
 }
