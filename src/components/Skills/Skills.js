@@ -13,7 +13,7 @@ const Skills = () => {
         <div id='skills' className='skills container-fluid d-flex align-items-center justify-content-center'>
             <FadeInSection>
                 <div className='boxRow row'>
-                    <h2 className='col'><b>Skills</b></h2>
+                    <h2 className='skillsHeading col'><b>Skills</b></h2>
                     <div className="w-100"></div>
                     <span className='divider'>______</span>
                     <div className="w-100"></div>

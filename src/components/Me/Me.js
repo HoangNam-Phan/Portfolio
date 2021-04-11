@@ -21,6 +21,7 @@ const Me = () => {
                                 Ich bin ein offener, engagierter und zielstrebiger Typ und der Überzeugung, dass ich eine perfekte
                                 Ergänzung für ihr Team wäre.
                             <br />
+                            <br />
                             Vielen Dank für ihren Besuch!
                         </p>
                     </div>

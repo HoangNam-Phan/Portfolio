@@ -25,10 +25,10 @@ const About = () => {
                     <span>_________________________</span>
                 </FadeInSection>
             </div>
-            <div className=' container'>
+            <div className='aboutCon container'>
                 <FadeInSection>
                     <div className='btnCon container d-flex p-0 align-items-center'>
-                        <div className="btn-group-vertical col-2 p-0">
+                        <div className="btn-group-vertical col-3 p-0">
                             <button className={`button ${tab === tabOneText ? 'btnClicked' : ''}`}
                                 onClick={() => handleClick(tabOneText)}>Leidenschaft</button>
                             <button className={`button ${tab === tabTwoText ? 'btnClicked' : ''}`}
@@ -38,7 +38,7 @@ const About = () => {
                             <button className={`button ${tab === tabFourText ? 'btnClicked' : ''}`}
                                 onClick={() => handleClick(tabFourText)}>Spaß</button>
                         </div>
-                        <div className='aboutText col-10'>
+                        <div className='aboutText col-9'>
                             <p>
                                 {tab}
                             </p>
