@@ -15,6 +15,7 @@ export default function Contact() {
                 console.log(error.text);
             });
         e.target.reset();
+        alert('Die E-Mail wurde erfolgreich gesendet.')
     }
 
     return (
