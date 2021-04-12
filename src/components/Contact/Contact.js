@@ -1,7 +1,22 @@
 import React from 'react';
 import FadeInSection from '../FadeEffect/FadeInSection';
+import emailjs from 'emailjs-com';
 
-const Contact = () => {
+
+export default function Contact() {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_qglg4s9', 'template_0x4vksf', e.target, 'user_A2VfkNre1M2J8eqSr9I1n')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
+
     return (
         <div id='contact' className='contact d-flex flex-column justify-content-center align-items-center'>
             <div className='contactHeading'>
@@ -11,22 +26,22 @@ const Contact = () => {
                 </FadeInSection>
             </div>
             <FadeInSection>
-                <form className='formCon' action="">
+                <form className='formCon' onSubmit={sendEmail}>
                     <div className='inputCon container d-flex flex-column'>
                         <label className='formLabels' htmlFor="name">Name :</label>
-                        <input type="text" className='inputField name' />
+                        <input name='name' type="text" className='inputField name' />
                     </div>
                     <div className='inputCon container d-flex flex-column'>
                         <label className='formLabels' htmlFor="email">E-Mail :</label>
-                        <input type="email" className='inputField email' />
+                        <input name='email' type="email" className='inputField email' />
                     </div>
                     <div className='inputCon container d-flex flex-column'>
                         <label className='formLabels' htmlFor="subject">Thema :</label>
-                        <input type="text" className='inputField subject' />
+                        <input name='subject' type="text" className='inputField subject' />
                     </div>
                     <div className='inputCon container d-flex flex-column'>
                         <label className='formLabels' htmlFor="message">Nachricht :</label>
-                        <input type="text" className='inputField message' />
+                        <input name='message' type="text" className='inputField message' />
                     </div>
                     <div className='container d-flex flex-column align-items-center'>
                         <input className='submitBtn mt-5 px-4 py-2' type="submit" value='Senden!' />
@@ -37,4 +52,3 @@ const Contact = () => {
     )
 }
 
-export default Contact
